@@ -36,9 +36,14 @@
         display: flex;
         align-items: center;
         padding: 10px;
-        gap: 5px;
+        gap: 10px;
         cursor: pointer;
         transition: all 0.3s ease;
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          color: #888;
+        }
         &:hover {
           background-color: #ece8ff;
           border-radius: 5px;
@@ -49,6 +54,36 @@
         }
         &:active {
           scale: 0.9;
+        }
+      }
+    }
+  }
+  .bottom {
+    padding-left: 10px;
+    .tittle {
+      font-size: 10px;
+      font-weight: bold;
+      color: #999;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .bottomContainer {
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+      margin-top: 15px;
+      gap: 10px;
+      .colorOption {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        border: 1px solid #6439ff;
+        cursor: pointer;
+        &:nth-child(1) {
+          background-color: whitesmoke;
+        }
+        &:nth-child(2) {
+          background-color: #333;
         }
       }
     }

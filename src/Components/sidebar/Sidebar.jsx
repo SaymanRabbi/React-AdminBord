@@ -54,7 +54,13 @@ const Sidebar = () => {
                     </li>
                 </ul>
             </div>
-            <div className='bottom'>Color Option</div>
+            <div className='bottom'>
+                <p className='tittle'>Changes Theme Color</p>
+                <div className="bottomContainer">
+                <div className="colorOption"></div>
+                <div className="colorOption"></div>
+                </div>
+            </div>
         </div>
     );
 };
