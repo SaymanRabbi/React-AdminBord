@@ -7,27 +7,32 @@ const Navbar = () => {
             <div className="wrapper">   
             <div className="search">
                 <input type="text" placeholder="Search..." className="searchInput"/>
-                <SearchOutlined/>
+                <SearchOutlined className="icon"/>
             </div>
             <div className="items">
                 <div className="item">
-                    <LanguageOutlined/>
+                    <LanguageOutlined className="icon"/>
                     English
                 </div>
                 <div className="item">
-                    <DarkModeOutlined/>
+                    <DarkModeOutlined className="icon"/>
                 </div>
                 <div className="item">
-                    <FullscreenExitOutlined/>
+                    <FullscreenExitOutlined className="icon"/>
                 </div>
                 <div className="item">
-               <NotificationsNoneOutlined/>
+               <NotificationsNoneOutlined className="icon"/>
+               <div className="counter">1</div>
                 </div>
                 <div className="item">
-                <ChatBubbleOutlineOutlined/>
+                <ChatBubbleOutlineOutlined className="icon"/>
+               <div className="counter">1</div>
                 </div>
                 <div className="item">
-                <ListAltOutlined/>
+                <ListAltOutlined className="icon"/>
+                </div>
+                <div className="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2NcXil-zvsEbK0YBf9F8FuMzquqIGHTAbRedKI8s&s" alt="avatar"  className='avatar'/>
                 </div>
             </div>
             </div>
