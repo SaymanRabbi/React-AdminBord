@@ -1,20 +1,20 @@
-import { KeyboardArrowUp, PersonOutlined } from '@mui/icons-material';
+import { KeyboardArrowUp } from '@mui/icons-material';
 import React from 'react';
 import './Widgest.scss';
-const Widgest = () => {
+const Widgest = ({type,total}) => {
     return (
         <div className='widgest'>
              <div className="left">
-               <span className='tittle'>COUNTREY</span>
-               <span className='Counter'>100000</span>
-               <span className='link'>See All Country</span>
+               <span className='tittle'>{type?.tittle}</span>
+               <span className='Counter'>{ total}</span>
+               <span className='link'>{type?.link}</span>
              </div>
              <div className="right">
                 <div className='percentage positive nagitive'>
                     <KeyboardArrowUp/>
                     20%
                 </div>
-                <PersonOutlined className='icon'/>
+                {type?.icon}
              </div>
         </div>
     );
