@@ -1,4 +1,4 @@
-import { SearchOutlined } from '@mui/icons-material';
+import { ChatBubbleOutlineOutlined, DarkModeOutlined, FullscreenExitOutlined, LanguageOutlined, ListAltOutlined, NotificationsNoneOutlined, SearchOutlined } from '@mui/icons-material';
 import React from 'react';
 import './Navbar.scss';
 const Navbar = () => {
@@ -10,9 +10,25 @@ const Navbar = () => {
                 <SearchOutlined/>
             </div>
             <div className="items">
-                <div className="item"></div>
-                <div className="item"></div>
-                <div className="item"></div>
+                <div className="item">
+                    <LanguageOutlined/>
+                    English
+                </div>
+                <div className="item">
+                    <DarkModeOutlined/>
+                </div>
+                <div className="item">
+                    <FullscreenExitOutlined/>
+                </div>
+                <div className="item">
+               <NotificationsNoneOutlined/>
+                </div>
+                <div className="item">
+                <ChatBubbleOutlineOutlined/>
+                </div>
+                <div className="item">
+                <ListAltOutlined/>
+                </div>
             </div>
             </div>
                     
