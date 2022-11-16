@@ -8,6 +8,7 @@ const Sidebar = () => {
             <div className='top'>
               <span className='logo'>Saymanadmin</span>
             </div>
+            <hr />
             <div className='center'>
                 <ul>
                     <li><span>Dashboard</span></li>
