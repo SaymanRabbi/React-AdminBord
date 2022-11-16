@@ -37,10 +37,18 @@
         align-items: center;
         padding: 10px;
         gap: 5px;
-        // cursor: pointer;
-        span,
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: #ece8ff;
+          border-radius: 5px;
+        }
         .icon {
-          cursor: pointer;
+          font-size: 18px;
+          color: #6439ff;
+        }
+        &:active {
+          scale: 0.9;
         }
       }
     }
