@@ -12,40 +12,44 @@ const Sidebar = () => {
             <hr />
             <div className='center'>
                 <ul>
+                    <p className="tittle">Main</p>
                     <li>
-                        <DashboardIcon/>
+                        <DashboardIcon  className="icon"/>
                         <span>Dashboard</span>
                     </li>
+                    <p className='tittle'>
+                        Features</p>
                     <li>
-                        <Speed/>
+                        <Speed className="icon"/>
                         <span>Intensity</span>
                     </li>
                     <li>
-                        <ChangeCircle/>
+                        <ChangeCircle className="icon"/>
                         <span>Likelihood</span>
                     </li>
                     <li>
-                        <Compare/>
+                        <Compare className="icon"/>
                         <span>Relevance</span>
                     </li>
                     <li>
-                        <CalendarMonth/>
+                        <CalendarMonth className="icon"/>
                         <span>Year</span>
                     </li>
                     <li>
-                        <Flag/>
+                        <Topic className="icon"/>
+                        <span>Topics</span>
+                    </li>
+                    <p className="tittle">Geography</p>
+                    <li>
+                        <Flag className="icon"/>
                         <span>Country</span>
                     </li>
                     <li>
-                        <Topic/>
-                        <span>Topics</span>
-                    </li>
-                    <li>
-                        <SouthAmerica/>
+                        <SouthAmerica className="icon"/>
                         <span>Region</span>
                     </li>
                     <li>
-                        <LocationCity/>
+                        <LocationCity className="icon"/>
                         <span>City</span>
                     </li>
                 </ul>
