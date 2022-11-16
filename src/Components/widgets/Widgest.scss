@@ -8,4 +8,44 @@
   border-radius: 10px;
   padding: 10px;
   height: 100px;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .tittle {
+      font-weight: bold;
+      font-size: 14px;
+      color: gray;
+    }
+    .Counter {
+      font-weight: 300;
+      font-size: 28px;
+      color: #3f51b5;
+    }
+    .link {
+      width: max-content;
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+    }
+    .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      &.positive {
+        color: green;
+      }
+      &.negative {
+        color: red;
+      }
+    }
+    .icon {
+      font-size: 28px;
+      padding: 5px;
+      border-radius: 5px;
+      align-self: flex-end;
+    }
+  }
 }
