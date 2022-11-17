@@ -1,17 +1,12 @@
 import { ChangeCircle, Compare, Flag, Speed } from "@mui/icons-material";
-import axios from "axios";
+
 import { useState } from "react";
-import { useQuery } from 'react-query';
+
 import Navbar from '../../Components/Navbar/Navbar';
 import Sidebar from '../../Components/sidebar/Sidebar';
 import Widgest from '../../Components/widgets/Widgest';
 import './Home.scss';
 const Home = () => {
-    let countryNum = 0
-    let intensityNum = 0
-    let likelihoodNum = 0
-    let relevanceNum = 0
-
     const [intensity, setIntensity] = useState({
         tittle: 'Intensity',
         money:true,
@@ -44,43 +39,17 @@ const Home = () => {
         />,
         link:'See All Relevance'
     })
-    const fetchUser = async () => {
-        const response = await axios.get(
-          "http://localhost:5000/api/v1/getAlldata"
-        );
-        return response.data;
-      };
-    const {data:alldata,isLoading,error} = useQuery('user',fetchUser)
-    if(isLoading){
-        return <h1>Loading...</h1>
-    }
-    if(error){
-        return <h1>Error...</h1>
-    }
-    alldata?.data?.map((i)=>{
-        if(i.country){
-            countryNum +=1
-        }
-        if(i.intensity){
-            intensityNum += parseInt(i.intensity) 
-        }
-        if(i.likelihood){
-            likelihoodNum += parseInt(i.likelihood)
-        }
-        if(i.relevance){
-            relevanceNum += parseInt(i.relevance)
-        }
-    })
+  
     return (
         <div className='home'>
             <Sidebar/>
             <div className="homeContainer">
                 <Navbar/>
                 <div className="widgets">
-                    <Widgest type={country} total={countryNum}/>
-                    <Widgest type={intensity} total={intensityNum}/>
-                    <Widgest type={likelihood} total={likelihoodNum}/>
-                    <Widgest type={relevance} total={relevanceNum}/>
+                    <Widgest type={country} info="country"/>
+                    <Widgest type={intensity} info="intensity"/>
+                    <Widgest type={likelihood} info="likelihood"/>
+                    <Widgest type={relevance} info="relevance"/>
                 </div>
             </div>
         </div>
