@@ -49,7 +49,7 @@ const Home = () => {
     })
     const fetchUser = async () => {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/getAlldata"
+          "https://dashboard-server6.onrender.com/api/v1/getAlldata"
         );
         return response.data;
       };
