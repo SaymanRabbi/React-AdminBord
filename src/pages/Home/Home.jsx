@@ -92,7 +92,7 @@ const Home = () => {
                 <div className="listContainer">
                     <div className="tittle">
                         <h1>All Country with Info</h1>
-                        <Tabel/>
+                        <Tabel data={alldata}/>
                     </div>
                 </div>
             </div>
