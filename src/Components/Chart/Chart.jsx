@@ -25,7 +25,7 @@ const Chart = ({data:alldata}) => {
   </defs>
   <XAxis dataKey="name" />
   <YAxis />
-  <CartesianGrid strokeDasharray="3 3" />
+  <CartesianGrid strokeDasharray="3 3" className='chartgrid'/>
   <Tooltip />
   <Area type="monotone" dataKey="intensity" stroke="#8884d8" fillOpacity={1} fill="url(#intensity)" />
 </AreaChart>

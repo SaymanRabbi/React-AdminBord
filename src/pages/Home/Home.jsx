@@ -7,6 +7,7 @@ import Chart from "../../Components/Chart/Chart";
 import Featured from "../../Components/Featured/Featured";
 import Navbar from '../../Components/Navbar/Navbar';
 import Sidebar from '../../Components/sidebar/Sidebar';
+import Tabel from "../../Components/Tabel/Tabel";
 import Widgest from '../../Components/widgets/Widgest';
 import './Home.scss';
 const Home = () => {
@@ -87,6 +88,12 @@ const Home = () => {
                 <div className="charts">
                     <Featured country={countryNum} intensity={intensityNum}/>
                     <Chart data={alldata}/>
+                </div>
+                <div className="listContainer">
+                    <div className="tittle">
+                        <h1>All Country with Info</h1>
+                        <Tabel/>
+                    </div>
                 </div>
             </div>
         </div>
