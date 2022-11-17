@@ -1,0 +1,37 @@
+.App.dark {
+  background-color: #222;
+  color: rgb(156, 156, 156);
+  .table {
+    background-color: #222;
+    .tabelcell {
+      color: rgb(156, 156, 156);
+    }
+  }
+  .navbar {
+    color: #999;
+    border-color: #333;
+  }
+  .sidebar {
+    background-color: #222;
+    color: #999;
+    border-color: #333;
+    .top {
+      .logo {
+        color: #999;
+      }
+    }
+    hr {
+      border-color: #333;
+    }
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+      }
+      .icon {
+        color: #999;
+      }
+    }
+  }
+}

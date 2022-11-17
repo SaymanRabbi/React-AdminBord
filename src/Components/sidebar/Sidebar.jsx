@@ -1,8 +1,11 @@
 import { CalendarMonth, ChangeCircle, Compare, Flag, LocationCity, SouthAmerica, Speed, Topic } from '@mui/icons-material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import React from 'react';
+import React, { useContext } from 'react';
+import { DarkModeContext } from '../../context/DarkModeContext';
 import './Sidebar.scss';
 const Sidebar = () => {
+    const {dispatch} = useContext(DarkModeContext);
+    // useEffect(() => {}, [dispatch]);
     return (
         <div className='sidebar'>
             {/* -------logo-------- */}
@@ -57,8 +60,9 @@ const Sidebar = () => {
             <div className='bottom'>
                 <p className='tittle'>Changes Theme Color</p>
                 <div className="bottomContainer">
-                <div className="colorOption"></div>
-                <div className="colorOption"></div>
+                <div className="colorOption" onClick={()=>dispatch({type:'SET_LIGHT_MODE'})}></div>
+                <div className="colorOption"
+                onClick={()=>dispatch({type:'SET_DARK_MODE'})}></div>
                 </div>
             </div>
         </div>

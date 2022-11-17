@@ -10,7 +10,7 @@ import './Tabel.scss';
 const Tabel = ({data}) => {
     return (
        
-              <TableContainer component={Paper} className='tabel'>
+              <TableContainer component={Paper} className='table'>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -27,7 +27,7 @@ const Tabel = ({data}) => {
                 row.country && <TableRow
                 key={i}
               >
-                <TableCell>
+                <TableCell className='tabelcell'>
                   {row?.country}
                 </TableCell>
                 <TableCell  className='tabelcell'>{row?.region}</TableCell>

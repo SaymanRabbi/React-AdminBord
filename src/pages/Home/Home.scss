@@ -1,5 +1,6 @@
 .home {
   display: flex;
+  position: relative;
   .homeContainer {
     flex: 6;
     .widgets,
@@ -11,5 +12,8 @@
     .charts {
       padding: 5px 20px;
     }
+  }
+  .listContainer {
+    padding: 20px;
   }
 }
